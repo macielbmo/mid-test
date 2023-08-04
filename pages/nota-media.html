@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Average</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/nota-media.css" />
+
+    <script src="../js/nota-media/nota-media.js" defer></script>
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="conteudo-header">
+        <h1>Mid Test</h1>
+
+        <h2>Nota Média</h2>
+        <p class="btn-voltar">
+          <a href="../index.html" class="link-container">
+            <img src="../img/esquerda.png" alt="seta para esquerda" />
+            Volta para home
+          </a>
+        </p>
+      </div>
+    </header>
+
+    <form class="container-form">
+      <div class="descricao">
+        <p>Insira as notas correspondentes a cada matéria.</p>
+      </div>
+
+      <div class="input">
+        <label for="portugues">Português: </label>
+        <input type="number" id="portugues" />
+      </div>
+
+      <div class="input">
+        <label for="matematica">Matématica: </label>
+        <input type="number" id="matematica" />
+      </div>
+
+      <div class="input">
+        <label for="ciencias">Ciências: </label>
+        <input type="number" id="ciencias" />
+      </div>
+
+      <div>
+        <button id="btn-calc">Calcular Média</button>
+      </div>
+    </form>
+    <section id="result"></section>
+  </body>
+</html>

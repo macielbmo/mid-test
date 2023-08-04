@@ -1,0 +1,48 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.input label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#btn-check {
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-check:hover {
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-result {
+    margin-top: 25px;
+}
+
+#p-calc {
+    margin: 15px 0;
+}

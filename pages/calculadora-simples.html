@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/calculadora-simples.css" />
+    <script
+      src="../js/calculadora-simples/calculadora-simples.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="conteudo-header">
+        <h1>Mid Test</h1>
+
+        <h2>Simple Caclculator</h2>
+        <p class="btn-voltar">
+          <a href="../index.html" class="link-container">
+            <img src="../img/esquerda.png" alt="seta para esquerda" />
+            Volta para home
+          </a>
+        </p>
+      </div>
+    </header>
+
+    <form class="container">
+      <div class="type-operation">
+        <h2>Selecione o tipo da operação:</h2>
+        <input type="radio" name="type-operation" id="sum" value="sum" />
+        <label for="sum">soma</label>
+
+        <input
+          type="radio"
+          name="type-operation"
+          id="subtraction"
+          value="subtraction"
+          required
+        />
+        <label for="subtraction">subtração</label>
+
+        <input
+          type="radio"
+          name="type-operation"
+          id="multiplication"
+          value="multiplication"
+          required
+        />
+        <label for="multiplication">multiplicação</label>
+
+        <input
+          type="radio"
+          name="type-operation"
+          id="division"
+          value="division"
+          required
+        />
+        <label for="division">divisão</label>
+      </div>
+
+      <div class="container-input">
+        <div class="input-number">
+          <label for="first-number">Primeiro número:</label>
+          <input type="number" id="first-number" required />
+        </div>
+        <div class="input-number">
+          <label for="second-number">Segundo número:</label>
+          <input type="number" id="second-number" required />
+        </div>
+      </div>
+
+      <div class="container-calculate">
+        <div class="button-calculate">
+          <button id="btn-calculate">Calcular</button>
+        </div>
+      </div>
+      <section id="container-result"></section>
+    </form>
+  </body>
+</html>
